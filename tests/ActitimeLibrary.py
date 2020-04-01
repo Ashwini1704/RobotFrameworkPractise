@@ -108,11 +108,11 @@ class ActitimeLibrary():
     '''
     def clickNew(self):
         # action=self.createActionObject()
-        wait=WebDriverWait(self.driver,20)
-        new=wait.until(EC.element_to_be_clickable((By.XPATH("//span[text()='New']"))))
-        new.click()
-        # new=self.getFields("xpath","//div[@id='addTaskButtonId']")
+        # wait=WebDriverWait(self.driver,20)
+        # new=wait.until(EC.element_to_be_clickable((By.XPATH("//span[text()='New']"))))
         # new.click()
+        new=self.getFields("xpath","//div[@id='addTaskButtonId']")
+        new.click()
         # action.double_click(new).perform()
 
     '''
