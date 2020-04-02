@@ -111,7 +111,7 @@ class ActitimeLibrary():
         # wait=WebDriverWait(self.driver,20)
         # new=wait.until(EC.element_to_be_clickable((By.XPATH("//span[text()='New']"))))
         # new.click()
-        new=self.getFields("xpath","//div[@id='addTaskButtonId']")
+        new=self.getFields("xpath","//div[@id='addTaskButtonId']//div//span[contains(text(),'New')]")
         new.click()
         # action.double_click(new).perform()
 
@@ -147,7 +147,7 @@ class ActitimeLibrary():
         return len(numberOfRows)
     '''
     Method Name : dynamicTableHandle
-    Description : Methos to handle dynamic table in user task page
+    Description : Method to handle dynamic table in user task page
     Arguments : self-object address
     Return : Nothings
     '''
